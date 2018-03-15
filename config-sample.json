@@ -13,6 +13,7 @@
             "onCode": 1234567, 
             "offCode": 2345678,
             "pin": 17,
+            "protocol": 1,
             "pulseLength": 190,
             "bitLength": 24,
             "repeats": 10
