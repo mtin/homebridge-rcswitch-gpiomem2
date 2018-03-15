@@ -43,7 +43,7 @@ function RadioSwitch(log, config) {
     informationService
         .setCharacteristic(Characteristic.Name, "node-rcswitch-gpiomem2")
         .setCharacteristic(Characteristic.Manufacturer, "fredericvl")
-        .setCharacteristic(Characteristic.Model, "v1.1.0")
+        .setCharacteristic(Characteristic.Model, "v1.2.2")
         .setCharacteristic(Characteristic.SerialNumber, "0000000001");
 
     var state = false;
@@ -58,8 +58,10 @@ function RadioSwitch(log, config) {
             rcswitch.setPulseLength(config.pulseLength || 190);
             rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
+                log("Switching on " + config.onCode + " (" + config.name + ") at protocol " + config.protocol);
                 switchOn();
             } else {
+                log("Switching off " + config.offCode + " (" + config.name + ") at protocol " + config.protocol);
                 switchOff();
             }
             callback();
