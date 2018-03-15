@@ -30,6 +30,6 @@
   },
   "homepage": "http://n8henrie.com/2015/12/control-an-rf-outlet-with-siri-via-homebridge",
   "dependencies": {
-      "rcswitch-gpiomem2": "0.1.0"
+      "rcswitch-gpiomem2": "0.1.1"
   }
 }
