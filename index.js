@@ -5,7 +5,7 @@ var Service, Characteristic;
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory("homebridge-rcswitch-gpiomem", "RCSwitch", RadioSwitch);
+    homebridge.registerAccessory("homebridge-rcswitch-gpiomem2", "RCSwitch", RadioSwitch);
 }
 
 function RadioSwitch(log, config) {
@@ -41,8 +41,8 @@ function RadioSwitch(log, config) {
     var informationService = new Service.AccessoryInformation();
 
     informationService
-        .setCharacteristic(Characteristic.Name, "node-rcswitch-gpiomem")
-        .setCharacteristic(Characteristic.Manufacturer, "n8henrie")
+        .setCharacteristic(Characteristic.Name, "node-rcswitch-gpiomem2")
+        .setCharacteristic(Characteristic.Manufacturer, "fredericvl")
         .setCharacteristic(Characteristic.Model, "v1.1.0")
         .setCharacteristic(Characteristic.SerialNumber, "0000000001");
 
