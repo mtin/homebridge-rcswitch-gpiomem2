@@ -1,9 +1,9 @@
-# homebridge-rcswitch-gpiomem
+# homebridge-rcswitch-gpiomem2
 
 <http://n8henrie.com/2015/12/control-an-rf-outlet-with-siri-via-homebridge>
 
 Control RF outlets with HomeKit / Siri using
-[rcswitch-gpiomem](https://github.com/n8henrie/node-rcswitch-gpiomem)
+[rcswitch-gpiomem2](https://github.com/fredericvl/node-rcswitch-gpiomem2)
 
 # Installation
 
