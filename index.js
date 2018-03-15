@@ -1,4 +1,4 @@
-var rcswitch = require('rcswitch-gpiomem');
+var rcswitch = require('rcswitch-gpiomem2');
 
 var Service, Characteristic;
 
