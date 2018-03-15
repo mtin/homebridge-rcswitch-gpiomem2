@@ -54,6 +54,7 @@ function RadioSwitch(log, config) {
         .on('set', function(value, callback) {
             state = value;
     		rcswitch.enableTransmit(config.pin || 17);
+            rcswitch.setProtocol(config.protocol || 1);
             rcswitch.setPulseLength(config.pulseLength || 190);
             rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
