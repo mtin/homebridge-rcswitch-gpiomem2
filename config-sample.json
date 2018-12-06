@@ -23,6 +23,19 @@
             "name": "Switch number two",
             "onCode": "010001011001100010100110", 
             "offCode": "001101000010100010111101"
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Switch number three (eg Elro, Brennstuhl)",
+            "systemcode": "01111",
+            "unitcode": 1
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Switch number four (Rev Intertechno V1)",
+            "onCode": "1FFFF1F0FFFF", 
+            "offCode": "1FFFF1F0FF00",
+            "triState": true
         }
     ]
 }

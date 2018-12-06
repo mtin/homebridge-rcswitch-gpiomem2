@@ -28,10 +28,12 @@ really help with.
 - `onCode`, `offCode` :: int or string
     - If int: Decimal RF code to turn switch on / off
     - If string: Binary RF code to turn switch on / off
+    - If triState param set to true: String with tri-state RF code to turn switch on / off
 - `systemcode` :: string :: RF system code. I don't use this, please
   refer to other docs.
 - `unitcode` ::  int :: RF unit code. I don't use this, please refer
   to other docs.
+- `triState` ::  bool :: If set, onCode and offCode strings are passed to rcswitch sendTriState method (0,1,F)
 - `pin` :: int, optional :: BCM pin connected to 433 mhz transmitter, defaults
   to `17`
 - `pulseLength` :: int, optional :: RF pulse length, defaults to `190`
