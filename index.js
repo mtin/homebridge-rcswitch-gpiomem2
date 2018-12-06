@@ -14,7 +14,14 @@ function RadioSwitch(log, config) {
         return log("Name missing from configuration.");
     }
 
-    if ((config.onCode !== undefined) && (config.offCode !== undefined)) {
+    if ((config.triState == true) && (config.onCode !== undefined) && (config.offCode !== undefined)) {
+        if (typeof(config.onCode) === "string") {
+            var switchOn = rcswitch.sendTriState.bind(rcswitch, config.onCode);
+        } 
+        if (typeof(config.offCode) === "string") {
+            var switchOff = rcswitch.sendTriState.bind(rcswitch, config.offCode);
+        }
+    } else if ((config.onCode !== undefined) && (config.offCode !== undefined)) {
         if (typeof(config.onCode) === "string") {
             // If code is a string, it should be binary and don't need bit length
             var switchOn = rcswitch.send.bind(rcswitch, config.onCode);
